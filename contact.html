@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Contact the Electoral Commission Uganda website concept for information and enquiries."
+    />
+
+    <title>Contact Us | Electoral Commission Uganda</title>
+
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <style>
+      /* ========================================
+       CONTACT PAGE — PREMIUM DESIGN
+    ======================================== */
+
+      .contact-section {
+        position: relative;
+        overflow: hidden;
+        padding: 85px 0 100px;
+        background:
+          radial-gradient(ellipse at 5% 10%, #fff8e5 0, transparent 32%),
+          linear-gradient(135deg, #ffffff 0%, #f7f9fc 100%);
+      }
+
+      .contact-section::before {
+        content: "";
+        position: absolute;
+        width: 360px;
+        height: 360px;
+        border: 1px solid rgba(244, 180, 0, 0.15);
+        border-radius: 50%;
+        top: -170px;
+        left: -180px;
+        pointer-events: none;
+      }
+
+      .contact-section::after {
+        content: "";
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: rgba(244, 180, 0, 0.07);
+        filter: blur(45px);
+        bottom: -130px;
+        right: -100px;
+        pointer-events: none;
+      }
+
+      .contact-layout {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 0.92fr 1.08fr;
+        gap: 65px;
+        align-items: start;
+      }
+
+      /* LEFT SIDE */
+
+      .contact-information {
+        padding: 14px 0 0;
+      }
+
+      .contact-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+        color: #9b7100;
+        font-size: 0.78rem;
+        font-weight: 850;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .contact-eyebrow::before {
+        content: "";
+        width: 32px;
+        height: 3px;
+        border-radius: 10px;
+        background: #f4b400;
+      }
+
+      .contact-information h2 {
+        margin: 0 0 16px;
+        color: #0b1f3a;
+        font-size: clamp(2.1rem, 4vw, 3.1rem);
+        line-height: 1.13;
+        letter-spacing: -1.6px;
+      }
+
+      .contact-information h2 span {
+        color: #d49b00;
+        position: relative;
+        display: inline-block;
+      }
+
+      .contact-intro {
+        max-width: 430px;
+        margin: 0 0 32px;
+        color: #66758a;
+        font-size: 0.98rem;
+        line-height: 1.85;
+      }
+
+      .contact-details {
+        display: grid;
+        gap: 13px;
+      }
+
+      .contact-item {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        gap: 17px;
+        padding: 17px 18px;
+        border: 1px solid rgba(221, 228, 237, 0.85);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 6px 22px rgba(11, 31, 58, 0.035);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease,
+          border-color 0.3s ease,
+          background 0.3s ease;
+        animation: contactFloatIn 0.7s both;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .contact-item:hover {
+        transform: translateX(8px);
+        border-color: rgba(244, 180, 0, 0.65);
+        background: #fff;
+        box-shadow: 0 12px 28px rgba(11, 31, 58, 0.09);
+      }
+
+      .contact-icon {
+        position: relative;
+        flex: 0 0 48px;
+        width: 48px;
+        height: 48px;
+        display: grid;
+        place-items: center;
+        color: #142943;
+        background: linear-gradient(145deg, #ffdf65, #f4b400);
+        border-radius: 14px;
+        box-shadow: 0 6px 15px rgba(244, 180, 0, 0.22);
+        transition: transform 0.35s ease;
+      }
+
+      .contact-item:hover .contact-icon {
+        transform: rotate(-7deg) scale(1.08);
+      }
+
+      .contact-icon svg {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .contact-item h3 {
+        margin: 1px 0 5px;
+        color: #142943;
+        font-size: 0.99rem;
+        font-weight: 800;
+      }
+
+      .contact-item p,
+      .contact-item a {
+        margin: 0;
+        color: #68778a;
+        font-size: 0.88rem;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+      }
+
+      .contact-item a {
+        transition: color 0.2s ease;
+      }
+
+      .contact-item a:hover {
+        color: #a87900;
+      }
+
+      .contact-note {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 25px;
+        padding: 15px 17px;
+        border-left: 3px solid #f4b400;
+        border-radius: 0 12px 12px 0;
+        background: #fff8e6;
+        color: #6d5a2a;
+        font-size: 0.84rem;
+        line-height: 1.7;
+      }
+
+      .contact-note strong {
+        color: #473811;
+      }
+
+      /* RIGHT SIDE FORM */
+
+      .contact-form-card {
+        position: relative;
+        padding: 36px;
+        border: 1px solid #e8edf3;
+        border-radius: 22px;
+        background: #fff;
+        box-shadow:
+          0 20px 60px rgba(11, 31, 58, 0.075),
+          0 3px 10px rgba(11, 31, 58, 0.025);
+        animation: contactFormIn 0.9s both;
+      }
+
+      .contact-form-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 35px;
+        right: 35px;
+        height: 4px;
+        border-radius: 0 0 10px 10px;
+        background: linear-gradient(90deg, #f4b400, #ffe58a, #f4b400);
+      }
+
+      .form-heading {
+        margin-bottom: 27px;
+      }
+
+      .form-heading h2 {
+        margin: 0 0 9px;
+        color: #0b1f3a;
+        font-size: 1.7rem;
+        letter-spacing: -0.6px;
+      }
+
+      .form-heading p {
+        margin: 0;
+        color: #778496;
+        font-size: 0.9rem;
+        line-height: 1.7;
+      }
+
+      .contact-form {
+        display: grid;
+        gap: 19px;
+      }
+
+      .contact-form .field {
+        gap: 8px;
+      }
+
+      .contact-form .field label {
+        color: #283950;
+        font-size: 0.85rem;
+        font-weight: 750;
+      }
+
+      .required-star {
+        color: #d69c00;
+      }
+
+      .contact-form .field input,
+      .contact-form .field select,
+      .contact-form .field textarea {
+        width: 100%;
+        padding: 14px 15px;
+        border: 1px solid #dfe5ed;
+        border-radius: 10px;
+        background: #fbfcfe;
+        color: #17263a;
+        font-size: 0.9rem;
+        transition:
+          border-color 0.25s ease,
+          box-shadow 0.25s ease,
+          background 0.25s ease,
+          transform 0.25s ease;
+      }
+
+      .contact-form .field input,
+      .contact-form .field select {
+        min-height: 51px;
+      }
+
+      .contact-form .field textarea {
+        min-height: 155px;
+        resize: vertical;
+        line-height: 1.7;
+      }
+
+      .contact-form .field input::placeholder,
+      .contact-form .field textarea::placeholder {
+        color: #a2adbb;
+      }
+
+      .contact-form .field input:focus,
+      .contact-form .field select:focus,
+      .contact-form .field textarea:focus {
+        outline: none;
+        border-color: #e3ad10;
+        background: #fff;
+        box-shadow: 0 0 0 4px rgba(244, 180, 0, 0.13);
+        transform: translateY(-1px);
+      }
+
+      .contact-submit {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        min-height: 54px;
+        margin-top: 2px;
+        padding: 14px 22px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(110deg, #f4b400, #ffd34d);
+        color: #14243a;
+        font-size: 0.95rem;
+        font-weight: 850;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(244, 180, 0, 0.2);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          background 0.25s ease;
+      }
+
+      .contact-submit:hover {
+        transform: translateY(-3px);
+        background: linear-gradient(110deg, #ffcb28, #ffe27b);
+        box-shadow: 0 13px 27px rgba(244, 180, 0, 0.3);
+      }
+
+      .contact-submit:active {
+        transform: translateY(0);
+      }
+
+      .contact-submit svg {
+        width: 19px;
+        height: 19px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        transition: transform 0.25s ease;
+      }
+
+      .contact-submit:hover svg {
+        transform: translateX(4px);
+      }
+
+      .contact-privacy {
+        margin: 14px 0 0;
+        text-align: center;
+        color: #8b97a7;
+        font-size: 0.76rem;
+        line-height: 1.7;
+      }
+
+      .contact-form-card .notice {
+        margin-top: 15px;
+        line-height: 1.7;
+      }
+
+      /* ENTRANCE ANIMATIONS */
+
+      @keyframes contactFloatIn {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes contactFormIn {
+        from {
+          opacity: 0;
+          transform: translateY(25px) scale(0.985);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .contact-information.reveal-ready .contact-eyebrow,
+      .contact-information.reveal-ready .contact-title,
+      .contact-information.reveal-ready .contact-intro,
+      .contact-information.reveal-ready .contact-item,
+      .contact-information.reveal-ready .contact-note {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+
+      .contact-information.is-visible .contact-eyebrow,
+      .contact-information.is-visible .contact-title,
+      .contact-information.is-visible .contact-intro,
+      .contact-information.is-visible .contact-item,
+      .contact-information.is-visible .contact-note {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .contact-information.is-visible .contact-title {
+        transition-delay: 0.1s;
+      }
+
+      .contact-information.is-visible .contact-intro {
+        transition-delay: 0.2s;
+      }
+
+      .contact-information.is-visible .contact-item:nth-child(1) {
+        transition-delay: 0.25s;
+      }
+
+      .contact-information.is-visible .contact-item:nth-child(2) {
+        transition-delay: 0.35s;
+      }
+
+      .contact-information.is-visible .contact-item:nth-child(3) {
+        transition-delay: 0.45s;
+      }
+
+      .contact-information.is-visible .contact-item:nth-child(4) {
+        transition-delay: 0.55s;
+      }
+
+      .contact-information.is-visible .contact-note {
+        transition-delay: 0.65s;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* TABLETS */
+
+      @media (max-width: 900px) {
+        .contact-section {
+          padding: 65px 0 75px;
+        }
+
+        .contact-layout {
+          grid-template-columns: 1fr 1fr;
+          gap: 28px;
+        }
+
+        .contact-form-card {
+          padding: 27px;
+        }
+
+        .contact-information h2 {
+          font-size: 2.3rem;
+        }
+      }
+
+      /* MOBILE */
+
+      @media (max-width: 680px) {
+        .contact-section {
+          padding: 45px 0 60px;
+        }
+
+        .contact-layout {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+
+        .contact-information {
+          padding-top: 0;
+        }
+
+        .contact-information h2 {
+          font-size: 2.45rem;
+        }
+
+        .contact-intro {
+          margin-bottom: 24px;
+        }
+
+        .contact-item {
+          padding: 15px;
+        }
+
+        .contact-item:hover {
+          transform: translateY(-3px);
+        }
+
+        .contact-form-card {
+          padding: 27px 20px;
+          border-radius: 17px;
+        }
+
+        .contact-form-card::before {
+          left: 20px;
+          right: 20px;
+        }
+
+        .form-heading h2 {
+          font-size: 1.5rem;
+        }
+
+        .contact-form {
+          gap: 16px;
+        }
+      }
+
+      @media (max-width: 380px) {
+        .contact-information h2 {
+          font-size: 2.1rem;
+        }
+
+        .contact-icon {
+          flex-basis: 43px;
+          width: 43px;
+          height: 43px;
+        }
+
+        .contact-form-card {
+          padding: 24px 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="container">
+        <span>Electoral Commission Uganda · Website Concept</span>
+        <span>Integrity · Transparency · Democracy</span>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header>
+      <div class="container nav-wrap">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Electoral Commission Uganda home"
+        >
+          <img
+            class="brand-logo"
+            src="assets/logo.png"
+            alt="Electoral Commission Uganda logo"
+          />
+
+          <span>
+            <strong>THE ELECTORAL COMMISSION</strong>
+            <small>UGANDA · WEBSITE CONCEPT</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+
+          <div class="dropdown">
+            <button class="dropbtn" type="button">Categories ▾</button>
+
+            <div class="dropmenu">
+              <a href="categories.html#registration">Voter Registration</a>
+              <a href="categories.html#elections">Elections</a>
+              <a href="categories.html#results">Election Results</a>
+              <a href="categories.html#education">Civic Education</a>
+              <a href="categories.html#services">Other Services</a>
+            </div>
+          </div>
+
+          <a href="gallery.html">Gallery</a>
+          <a href="faq.html">FAQ</a>
+          <a class="active" href="contact.html">Contact</a>
+        </nav>
+
+        <a class="btn btn-gold nav-cta" href="categories.html#registration">
+          Voter Portal ↗
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- PAGE BANNER -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="crumb"><a href="index.html">Home</a> / Contact</div>
+
+          <h1>Contact Us</h1>
+
+          <p>
+            We're here to help. Get in touch with us for information and
+            enquiries.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT CONTENT -->
+      <section class="contact-section">
+        <div class="container contact-layout">
+          <!-- LEFT: ANIMATED CONTACT INFORMATION -->
+          <div class="contact-information">
+            <div class="contact-eyebrow">Get in touch</div>
+
+            <h2 class="contact-title">
+              Let's start a
+              <span>conversation.</span>
+            </h2>
+
+            <p class="contact-intro">
+              Have a question or need assistance? We're happy to help. Explore
+              our contact information below or send us a message using the form.
+            </p>
+
+            <div class="contact-details">
+              <!-- ADDRESS -->
+              <article class="contact-item" style="--delay: 0.1s">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+                    <circle cx="12" cy="10" r="2.5" />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3>Our Address</h3>
+                  <p>Kampala, Uganda</p>
+                  <p>Insert verified official postal address</p>
+                </div>
+              </article>
+
+              <!-- PHONE -->
+              <article class="contact-item" style="--delay: 0.2s">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M22 16.9v3a2 2 0 0 1-2.2 2
+                    19.8 19.8 0 0 1-8.6-3.1
+                    19.4 19.4 0 0 1-6-6
+                    19.8 19.8 0 0 1-3.1-8.7
+                    A2 2 0 0 1 4.1 2h3
+                    a2 2 0 0 1 2 1.7
+                    c.1 1 .4 2 .7 2.9
+                    a2 2 0 0 1-.5 2.1L8 8.9
+                    a16 16 0 0 0 6 6l1.2-1.3
+                    a2 2 0 0 1 2.1-.5
+                    c.9.3 1.9.6 2.9.7
+                    a2 2 0 0 1 1.8 2.1Z"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3>Phone</h3>
+                  <p>Official telephone number</p>
+                  <p>Replace with verified contact details</p>
+                </div>
+              </article>
+
+              <!-- EMAIL -->
+              <article class="contact-item" style="--delay: 0.3s">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3 7 9 6 9-6" />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3>Email Address</h3>
+                  <p>
+                    <a href="mailto:"> Add verified official email </a>
+                  </p>
+                </div>
+              </article>
+
+              <!-- OFFICE HOURS -->
+              <article class="contact-item" style="--delay: 0.4s">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 2" />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3>Working Hours</h3>
+                  <p>Monday – Friday</p>
+                  <p>Insert confirmed official office hours</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="contact-note">
+              <span aria-hidden="true">✦</span>
+              <div>
+                <strong>We're here to assist.</strong>
+                <br />
+                For accurate electoral information, please use verified official
+                Commission channels.
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: CONTACT FORM -->
+          <div class="contact-form-card">
+            <div class="form-heading">
+              <div class="kicker">Send us a message</div>
+
+              <h2>How can we help you?</h2>
+
+              <p>
+                Complete the form below and tell us how we can assist you.
+                Fields marked with an asterisk are required.
+              </p>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+              <div class="field">
+                <label for="name">
+                  Full Name <span class="required-star">*</span>
+                </label>
+
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="email">
+                  Email Address <span class="required-star">*</span>
+                </label>
+
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="subject">
+                  Subject <span class="required-star">*</span>
+                </label>
+
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="Voter registration">Voter registration</option>
+                  <option value="Election information">
+                    Election information
+                  </option>
+                  <option value="Election results">Election results</option>
+                  <option value="Civic education">Civic education</option>
+                  <option value="Publications">
+                    Publications and resources
+                  </option>
+                  <option value="General enquiry">General enquiry</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">
+                  Message <span class="required-star">*</span>
+                </label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Please describe your enquiry..."
+                  required
+                ></textarea>
+              </div>
+
+              <button class="contact-submit" type="submit">
+                Send Message
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </form>
+
+            <div class="notice" role="status" aria-live="polite"></div>
+
+            <p class="contact-privacy">
+              Your information should be handled securely and in accordance with
+              the applicable privacy requirements.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html">
+              <img
+                class="brand-logo"
+                src="assets/logo.png"
+                alt="Electoral Commission Uganda logo"
+              />
+
+              <span>
+                <strong style="color: white"> THE ELECTORAL COMMISSION </strong>
+                <small style="color: #b9c7d7"> UGANDA · WEBSITE CONCEPT </small>
+              </span>
+            </a>
+
+            <p>
+              Supporting informed participation and accessible electoral
+              information through a clear, user-friendly website.
+            </p>
+          </div>
+
+          <div>
+            <div class="footer-title">Quick Links</div>
+            <a href="about.html">About the Commission</a>
+            <a href="categories.html">Services & Categories</a>
+            <a href="news.html">News & Updates</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+
+          <div>
+            <div class="footer-title">Help & Support</div>
+            <a href="faq.html">Frequently Asked Questions</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="categories.html#registration">Voter Registration</a>
+            <a href="categories.html#results">Election Results</a>
+          </div>
+
+          <div class="footer-contact-column">
+            <div class="footer-contact-copy">
+              <div class="footer-title">Contact Information</div>
+              <p class="footer-contact-item"><span class="footer-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>Kampala, Uganda</span></p>
+              <p class="footer-contact-item"><span class="footer-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h3l2 5-2 1.5a14 14 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10.7 19 5 13.3 5 6c0-1.7.6-3 2-3Z"/></svg></span><span>Verified official telephone details</span></p>
+              <p class="footer-contact-item"><span class="footer-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span>Verified official email address</span></p>
+            </div>
+
+            <div class="footer-side-cta">
+              <img
+                class="footer-flag"
+                src="assets/flag.png"
+                alt="Uganda national flag"
+              />
+
+              <div class="footer-strap">Your Vote<br />Your Future</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>
+            © 2026 Website design concept. Not an official government website.
+          </span>
+          <span class="footer-legal-links">
+            <a href="policies.html#accessibility">Accessibility</a>
+            <a href="policies.html#privacy">Privacy</a>
+            <a href="policies.html#terms">Terms</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SHARED SITE JAVASCRIPT -->
+    <script src="assets/script.js"></script>
+
+    <!-- CONTACT SECTION SCROLL ANIMATION -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const information = document.querySelector(".contact-information");
+
+        if (!information) return;
+
+        // Reveal contact information progressively as it enters the viewport.
+        information.classList.add("reveal-ready");
+
+        if (
+          "IntersectionObserver" in window &&
+          !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ) {
+          const observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("is-visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            {
+              threshold: 0.15,
+              rootMargin: "0px 0px -35px 0px",
+            },
+          );
+
+          observer.observe(information);
+        } else {
+          information.classList.add("is-visible");
+        }
+      });
+    </script>
+  </body>
+</html>

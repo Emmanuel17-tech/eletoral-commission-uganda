@@ -1,0 +1,2587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn about the Electoral Commission of Uganda, its constitutional mandate, independence, responsibilities and role in the electoral process."
+    />
+
+    <meta name="theme-color" content="#173d2c" />
+
+    <title>About the Commission | Electoral Commission Uganda — Concept</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <style>
+      :root {
+        --ec-green: #173d2c;
+        --ec-green-dark: #102b20;
+        --ec-green-soft: #eaf0e9;
+        --ec-gold: #e5b84c;
+        --ec-red: #b83b36;
+        --ec-ink: #202923;
+        --ec-muted: #68736b;
+        --ec-paper: #fbfaf6;
+        --ec-white: #ffffff;
+        --ec-line: #e3e5df;
+        --ec-container: 1180px;
+        --ec-serif: "Playfair Display", Georgia, serif;
+        --ec-sans: "DM Sans", Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+
+      body {
+        margin: 0;
+        background: var(--ec-paper);
+        color: var(--ec-ink);
+        font-family: var(--ec-sans);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button {
+        font: inherit;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid var(--ec-gold);
+        outline-offset: 4px;
+      }
+
+      .ec-container {
+        width: min(var(--ec-container), calc(100% - 48px));
+        margin-inline: auto;
+      }
+
+      .ec-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 11px;
+        margin: 0 0 17px;
+        color: var(--ec-green);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        line-height: 1.5;
+        text-transform: uppercase;
+      }
+
+      .ec-eyebrow::before {
+        width: 26px;
+        height: 2px;
+        background: var(--ec-gold);
+        content: "";
+      }
+
+      .ec-section-title {
+        max-width: 720px;
+        margin: 0;
+        font-family: var(--ec-serif);
+        font-size: clamp(2.1rem, 4vw, 3.55rem);
+        font-weight: 600;
+        letter-spacing: -0.045em;
+        line-height: 1.14;
+      }
+
+      .ec-lead {
+        max-width: 660px;
+        color: var(--ec-muted);
+        font-size: 1.04rem;
+        line-height: 1.9;
+      }
+
+      .ec-text-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid currentColor;
+        color: var(--ec-green);
+        font-size: 0.92rem;
+        font-weight: 700;
+        transition: gap 0.2s ease;
+      }
+
+      .ec-text-link:hover {
+        gap: 16px;
+      }
+
+      .ec-button {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 20px;
+        border: 1px solid transparent;
+        background: var(--ec-green);
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 700;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .ec-button:hover {
+        transform: translateY(-2px);
+        background: var(--ec-green-dark);
+      }
+
+      .ec-button--light {
+        border-color: rgba(255, 255, 255, 0.45);
+        background: transparent;
+        color: white;
+      }
+
+      .ec-button--light:hover {
+        background: white;
+        color: var(--ec-green);
+      }
+
+      .ec-button--gold {
+        background: var(--ec-gold);
+        color: var(--ec-green-dark);
+      }
+
+      .ec-button--gold:hover {
+        background: #f0cb70;
+        color: var(--ec-green-dark);
+      }
+
+      /* Concept notice */
+
+      .ec-concept-notice {
+        padding: 8px 16px;
+        background: #f0e9d8;
+        color: #574725;
+        font-size: 0.76rem;
+        text-align: center;
+      }
+
+      .ec-concept-notice strong {
+        font-weight: 700;
+      }
+
+      /* Institutional header */
+
+      .ec-header {
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+        border-bottom: 1px solid var(--ec-line);
+        background: rgba(251, 250, 246, 0.97);
+        backdrop-filter: blur(14px);
+      }
+
+      .ec-header-main {
+        display: flex;
+        min-height: 90px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+      }
+
+      .ec-brand {
+        display: flex;
+        min-width: 0;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .ec-brand img {
+        width: 61px;
+        height: 61px;
+        flex: 0 0 auto;
+        object-fit: contain;
+      }
+
+      .ec-brand-copy {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.35;
+      }
+
+      .ec-brand-copy strong {
+        color: var(--ec-green);
+        font-size: 0.96rem;
+        font-weight: 700;
+      }
+
+      .ec-brand-copy span {
+        margin-top: 4px;
+        color: var(--ec-muted);
+        font-size: 0.73rem;
+      }
+
+      .ec-navigation {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+      }
+
+      .ec-navigation > a {
+        position: relative;
+        padding: 32px 0;
+        color: #485249;
+        font-size: 0.84rem;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .ec-navigation > a:not(.ec-nav-cta)::after {
+        position: absolute;
+        right: 0;
+        bottom: 24px;
+        left: 0;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        background: var(--ec-gold);
+        content: "";
+        transition: transform 0.2s ease;
+      }
+
+      .ec-navigation > a:hover::after,
+      .ec-navigation > a[aria-current="page"]::after {
+        transform: scaleX(1);
+      }
+
+      .ec-navigation > a[aria-current="page"] {
+        color: var(--ec-green);
+      }
+
+      .ec-navigation .ec-nav-cta {
+        padding: 11px 15px;
+        background: #e8be3f;
+        border-radius: 30px;
+        font-weight: bold;
+        color: rgb(15, 89, 28);
+      }
+
+      .ec-menu-toggle {
+        display: none;
+        width: 46px;
+        height: 46px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--ec-line);
+        background: transparent;
+        color: var(--ec-green);
+        cursor: pointer;
+      }
+
+      .ec-menu-toggle svg {
+        width: 23px;
+        height: 23px;
+      }
+
+      /* Hero: editorial rather than a generic banner */
+
+      .ec-hero {
+        position: relative;
+        overflow: hidden;
+        background: var(--ec-green-dark);
+        color: white;
+      }
+
+      .ec-hero::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 39%;
+        background: var(--ec-green);
+        content: "";
+        clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%);
+        opacity: 0.72;
+      }
+
+      .ec-hero-inner {
+        position: relative;
+        display: grid;
+        min-height: 550px;
+        grid-template-columns: 0.96fr 1fr;
+        align-items: center;
+        gap: 42px;
+        padding-block: 72px;
+        animation: ec-hero-content-enter 0.8s cubic-bezier(0.2, 0.75, 0.25, 1)
+          both;
+      }
+
+      @keyframes ec-hero-content-enter {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .ec-hero-copy {
+        position: relative;
+        z-index: 2;
+        max-width: 620px;
+      }
+
+      .ec-hero .ec-eyebrow {
+        color: #e8c96e;
+      }
+
+      .ec-hero h1 {
+        margin: 0;
+        font-family: var(--ec-serif);
+        font-size: clamp(3rem, 5.5vw, 5.2rem);
+        font-weight: 500;
+        letter-spacing: -0.055em;
+        line-height: 1.04;
+      }
+
+      .ec-hero h1 span {
+        color: #e8c96e;
+      }
+
+      .ec-hero-description {
+        max-width: 520px;
+        margin: 24px 0 29px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.03rem;
+        line-height: 1.9;
+      }
+
+      .ec-hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .ec-hero-visual {
+        position: relative;
+        min-width: 0;
+        padding: 0 0 43px 12px;
+      }
+
+      .ec-hero-image {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        aspect-ratio: 0.98;
+        background: #31533f;
+        animation: ec-hero-image-enter 0.95s cubic-bezier(0.2, 0.75, 0.25, 1)
+          0.12s both;
+      }
+
+      .ec-hero-image::after {
+        position: absolute;
+        inset: 45% 0 0;
+        background: linear-gradient(transparent, rgba(8, 26, 17, 0.65));
+        content: "";
+      }
+
+      .ec-hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.8);
+      }
+
+      .ec-hero-image figcaption {
+        position: absolute;
+        z-index: 1;
+        right: 23px;
+        bottom: 20px;
+        left: 23px;
+        color: white;
+        font-size: 0.78rem;
+        letter-spacing: 0.02em;
+      }
+
+      .ec-hero-note {
+        position: absolute;
+        right: -5px;
+        bottom: 0;
+        width: min(265px, 75%);
+        padding: 22px;
+        border-top: 4px solid var(--ec-gold);
+        background: var(--ec-paper);
+        color: var(--ec-ink);
+        box-shadow: 0 12px 45px rgba(0, 0, 0, 0.16);
+        animation: ec-hero-note-enter 0.85s cubic-bezier(0.2, 0.75, 0.25, 1)
+          0.45s both;
+      }
+
+      @keyframes ec-hero-image-enter {
+        from {
+          opacity: 0;
+          transform: translateY(-48px) scale(0.98);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes ec-hero-note-enter {
+        from {
+          opacity: 0;
+          transform: translateX(-56px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .ec-hero-note span {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--ec-muted);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .ec-hero-note strong {
+        display: block;
+        font-family: var(--ec-serif);
+        font-size: 1.35rem;
+        font-weight: 600;
+        line-height: 1.35;
+      }
+
+      .ec-hero-note small {
+        display: block;
+        margin-top: 8px;
+        color: var(--ec-muted);
+        font-size: 0.77rem;
+      }
+
+      /* Quick links */
+
+      .ec-quick-strip {
+        border-bottom: 1px solid var(--ec-line);
+        background: #f2f0e8;
+      }
+
+      .ec-quick-inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .ec-quick-link {
+        display: flex;
+        min-height: 85px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 18px 20px;
+        border-right: 1px solid #dedfd7;
+        color: var(--ec-green);
+        font-size: 0.87rem;
+        font-weight: 700;
+        transition: background 0.2s ease;
+      }
+
+      .ec-quick-link:first-child {
+        border-left: 1px solid #dedfd7;
+      }
+
+      .ec-quick-link:hover {
+        background: #e7e7dc;
+      }
+
+      .ec-quick-link span:last-child {
+        color: #a07a22;
+        font-size: 1.2rem;
+      }
+
+      /* Introduction */
+
+      .ec-intro {
+        padding-block: 112px;
+      }
+
+      .ec-intro-grid {
+        display: grid;
+        grid-template-columns: 0.72fr 1.28fr;
+        gap: 90px;
+      }
+
+      .ec-intro-aside {
+        padding-top: 9px;
+      }
+
+      .ec-intro-aside p {
+        max-width: 280px;
+        color: var(--ec-muted);
+        font-size: 0.92rem;
+      }
+
+      .ec-intro-main .ec-section-title {
+        max-width: 790px;
+      }
+
+      .ec-intro-main .ec-lead {
+        margin-top: 24px;
+      }
+
+      .ec-intro-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        margin-top: 35px;
+        padding-top: 28px;
+        border-top: 1px solid var(--ec-line);
+      }
+
+      .ec-intro-bottom p {
+        margin: 0;
+        color: #566158;
+        font-size: 0.92rem;
+      }
+
+      /* Constitutional mandate */
+
+      .ec-mandate {
+        padding-block: 100px;
+        background: #f0f0e8;
+      }
+
+      .ec-mandate-heading {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 48px;
+      }
+
+      .ec-mandate-heading .ec-section-title {
+        max-width: 690px;
+      }
+
+      .ec-mandate-heading > p {
+        max-width: 320px;
+        margin: 0 0 5px;
+        color: var(--ec-muted);
+        font-size: 0.9rem;
+      }
+
+      .ec-mandate-layout {
+        display: grid;
+        grid-template-columns: 0.82fr 1.18fr;
+        border: 1px solid #d9ddd4;
+        background: var(--ec-paper);
+      }
+
+      .ec-mandate-statement {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 390px;
+        padding: 38px;
+        background: var(--ec-green);
+        color: white;
+      }
+
+      .ec-mandate-statement .ec-number {
+        color: #e8c96e;
+        font-family: var(--ec-serif);
+        font-size: 4.5rem;
+        line-height: 1;
+      }
+
+      .ec-mandate-statement h3 {
+        max-width: 360px;
+        margin: 30px 0 16px;
+        font-family: var(--ec-serif);
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+
+      .ec-mandate-statement p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.88rem;
+      }
+
+      .ec-mandate-list {
+        margin: 0;
+        padding: 15px 35px;
+        list-style: none;
+      }
+
+      .ec-mandate-list li {
+        display: grid;
+        grid-template-columns: 38px 1fr;
+        gap: 16px;
+        padding: 19px 0;
+        border-bottom: 1px solid var(--ec-line);
+      }
+
+      .ec-mandate-list li:last-child {
+        border-bottom: 0;
+      }
+
+      .ec-mandate-list .ec-list-number {
+        color: #9b7929;
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+
+      .ec-mandate-list p {
+        margin: 0;
+        font-size: 0.91rem;
+        line-height: 1.65;
+      }
+
+      .ec-mandate-footnote {
+        margin-top: 18px;
+        color: var(--ec-muted);
+        font-size: 0.78rem;
+      }
+
+      /* Independence */
+
+      .ec-independence {
+        padding-block: 105px;
+        background: var(--ec-paper);
+      }
+
+      .ec-independence-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 85px;
+      }
+
+      .ec-independence-image {
+        position: relative;
+        min-width: 0;
+      }
+
+      .ec-independence-image img {
+        width: 100%;
+        aspect-ratio: 1.04;
+        object-fit: cover;
+        filter: saturate(0.78);
+      }
+
+      .ec-image-caption {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 13px 0;
+        border-bottom: 1px solid var(--ec-line);
+        color: var(--ec-muted);
+        font-size: 0.76rem;
+      }
+
+      .ec-image-caption span:last-child {
+        color: var(--ec-green);
+        font-weight: 700;
+      }
+
+      .ec-independence-copy .ec-section-title {
+        font-size: clamp(2.2rem, 3.7vw, 3.4rem);
+      }
+
+      .ec-independence-copy > p:not(.ec-eyebrow) {
+        color: var(--ec-muted);
+        font-size: 0.96rem;
+      }
+
+      .ec-constitutional-reference {
+        margin-top: 27px;
+        padding: 20px 23px;
+        border-left: 3px solid var(--ec-gold);
+        background: #f0f0e8;
+      }
+
+      .ec-constitutional-reference strong {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--ec-green);
+        font-size: 0.9rem;
+      }
+
+      .ec-constitutional-reference p {
+        margin: 0;
+        color: #5f685f;
+        font-size: 0.84rem;
+      }
+
+      /* Electoral process */
+
+      .ec-process {
+        padding-block: 105px;
+        background: #fff;
+      }
+
+      .ec-process-header {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 35px;
+        margin-bottom: 48px;
+      }
+
+      .ec-process-header .ec-lead {
+        max-width: 400px;
+        margin: 0;
+        font-size: 0.92rem;
+      }
+
+      .ec-process-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid var(--ec-line);
+        border-bottom: 1px solid var(--ec-line);
+      }
+
+      .ec-process-item {
+        position: relative;
+        min-height: 210px;
+        padding: 26px 23px 30px 0;
+      }
+
+      .ec-process-item:not(:nth-child(4n + 1)) {
+        padding-left: 22px;
+        border-left: 1px solid var(--ec-line);
+      }
+
+      .ec-process-item:nth-child(n + 5) {
+        border-top: 1px solid var(--ec-line);
+      }
+
+      .ec-process-item .ec-process-number {
+        display: block;
+        margin-bottom: 30px;
+        color: #a17c26;
+        font-family: var(--ec-serif);
+        font-size: 2rem;
+        line-height: 1;
+      }
+
+      .ec-process-item h3 {
+        margin: 0 0 9px;
+        color: var(--ec-green);
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      .ec-process-item p {
+        margin: 0;
+        color: var(--ec-muted);
+        font-size: 0.84rem;
+        line-height: 1.7;
+      }
+
+      .ec-process-note {
+        margin-top: 20px;
+        color: var(--ec-muted);
+        font-size: 0.78rem;
+      }
+
+      /* Institutional values */
+
+      .ec-values {
+        padding-block: 100px;
+        background: #e9eee7;
+      }
+
+      .ec-values-grid {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 90px;
+      }
+
+      .ec-values-intro {
+        align-self: start;
+      }
+
+      .ec-values-intro p:not(.ec-eyebrow) {
+        max-width: 400px;
+        color: var(--ec-muted);
+      }
+
+      .ec-values-list {
+        border-top: 1px solid #cbd4c9;
+      }
+
+      .ec-value-row {
+        display: grid;
+        grid-template-columns: 52px 1fr;
+        gap: 20px;
+        padding: 24px 0;
+        border-bottom: 1px solid #cbd4c9;
+      }
+
+      .ec-value-row > span {
+        color: #9b7929;
+        font-family: var(--ec-serif);
+        font-size: 1.55rem;
+      }
+
+      .ec-value-row h3 {
+        margin: 0 0 6px;
+        color: var(--ec-green);
+        font-size: 1.04rem;
+      }
+
+      .ec-value-row p {
+        max-width: 500px;
+        margin: 0;
+        color: #626e64;
+        font-size: 0.88rem;
+      }
+
+      /* Citizen information */
+
+      .ec-citizen {
+        padding-block: 105px;
+      }
+
+      .ec-citizen-heading {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 38px;
+      }
+
+      .ec-citizen-heading .ec-lead {
+        max-width: 400px;
+        margin: 0;
+        font-size: 0.92rem;
+      }
+
+      .ec-resource-list {
+        border-top: 1px solid var(--ec-line);
+      }
+
+      .ec-resource {
+        display: grid;
+        grid-template-columns: 65px 1fr 45px;
+        align-items: center;
+        gap: 22px;
+        padding: 26px 15px;
+        border-bottom: 1px solid var(--ec-line);
+        transition:
+          padding 0.2s ease,
+          background 0.2s ease;
+      }
+
+      .ec-resource:hover {
+        padding-right: 23px;
+        padding-left: 23px;
+        background: #f0f0e8;
+      }
+
+      .ec-resource-icon {
+        display: flex;
+        width: 55px;
+        height: 55px;
+        align-items: center;
+        justify-content: center;
+        background: #e8eee6;
+        color: var(--ec-green);
+        font-size: 1.35rem;
+      }
+
+      .ec-resource h3 {
+        margin: 0 0 5px;
+        color: var(--ec-green);
+        font-size: 1rem;
+      }
+
+      .ec-resource p {
+        max-width: 700px;
+        margin: 0;
+        color: var(--ec-muted);
+        font-size: 0.86rem;
+      }
+
+      .ec-resource-arrow {
+        color: #9b7929;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: transform 0.2s ease;
+      }
+
+      .ec-resource:hover .ec-resource-arrow {
+        transform: translateX(5px);
+      }
+
+      /* FAQ */
+
+      .ec-faq {
+        padding-block: 90px;
+        background: #f0f0e8;
+      }
+
+      .ec-faq-grid {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+        gap: 90px;
+      }
+
+      .ec-faq-intro p:not(.ec-eyebrow) {
+        color: var(--ec-muted);
+        font-size: 0.92rem;
+      }
+
+      .ec-faq-list {
+        border-top: 1px solid #d7dcd3;
+      }
+
+      .ec-faq-item {
+        border-bottom: 1px solid #d7dcd3;
+      }
+
+      .ec-faq-question {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 23px 0;
+        border: 0;
+        background: transparent;
+        color: var(--ec-ink);
+        cursor: pointer;
+        font-size: 0.96rem;
+        font-weight: 700;
+        text-align: left;
+      }
+
+      .ec-faq-question span:last-child {
+        display: flex;
+        width: 29px;
+        height: 29px;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #cdd4ca;
+        border-radius: 50%;
+        color: var(--ec-green);
+        font-size: 1.1rem;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
+      }
+
+      .ec-faq-question[aria-expanded="true"] span:last-child {
+        transform: rotate(45deg);
+        background: var(--ec-green);
+        color: white;
+      }
+
+      .ec-faq-answer {
+        padding: 0 40px 22px 0;
+        color: var(--ec-muted);
+        font-size: 0.88rem;
+      }
+
+      .ec-faq-answer p {
+        margin: 0;
+      }
+
+      /* Final call to action */
+
+      .ec-cta {
+        position: relative;
+        overflow: hidden;
+        background: var(--ec-green-dark);
+        color: white;
+      }
+
+      .ec-cta::after {
+        position: absolute;
+        top: -140px;
+        right: -100px;
+        width: 440px;
+        height: 440px;
+        border: 1px solid rgba(229, 184, 76, 0.24);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 45px rgba(229, 184, 76, 0.035),
+          0 0 0 90px rgba(229, 184, 76, 0.025);
+        content: "";
+        pointer-events: none;
+      }
+
+      .ec-cta-inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        min-height: 270px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        padding-block: 65px;
+      }
+
+      .ec-cta .ec-eyebrow {
+        color: #e8c96e;
+      }
+
+      .ec-cta h2 {
+        max-width: 680px;
+        margin: 0;
+        font-family: var(--ec-serif);
+        font-size: clamp(2.2rem, 4.3vw, 3.8rem);
+        font-weight: 500;
+        letter-spacing: -0.04em;
+        line-height: 1.18;
+      }
+
+      .ec-cta p:not(.ec-eyebrow) {
+        max-width: 600px;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.93rem;
+      }
+
+      .ec-cta-actions {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+
+      /* Footer */
+
+      .ec-footer {
+        background: #0c2118;
+        color: white;
+      }
+
+      .ec-footer-main {
+        display: grid;
+        grid-template-columns: 1.35fr 0.7fr 0.7fr 1fr;
+        gap: 55px;
+        padding-block: 65px;
+      }
+
+      .ec-footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+      }
+
+      .ec-footer-brand img {
+        width: 54px;
+        height: 54px;
+        object-fit: contain;
+        background: white;
+      }
+
+      .ec-footer-brand strong {
+        display: block;
+        font-size: 0.9rem;
+      }
+
+      .ec-footer-brand span {
+        display: block;
+        margin-top: 4px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.74rem;
+      }
+
+      .ec-footer-about > p {
+        max-width: 300px;
+        margin: 20px 0 0;
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 0.84rem;
+      }
+
+      .ec-footer-column h3 {
+        margin: 4px 0 18px;
+        color: #e8c96e;
+        font-size: 0.77rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .ec-footer-column a,
+      .ec-footer-column p {
+        display: block;
+        margin: 0 0 11px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.82rem;
+        line-height: 1.8;
+      }
+
+      .ec-footer-column a:hover {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      .ec-footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding-block: 19px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        color: rgba(255, 255, 255, 0.54);
+        font-size: 0.74rem;
+      }
+
+      .ec-footer-bottom p {
+        margin: 0;
+      }
+
+      .ec-footer-bottom a {
+        color: rgba(255, 255, 255, 0.76);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      /* Reveal animation */
+
+      .ec-reveal {
+        opacity: 0;
+        transform: translateY(17px);
+        transition:
+          opacity 0.65s ease,
+          transform 0.65s ease;
+      }
+
+      .ec-reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .ec-reveal {
+          opacity: 1;
+          transform: none;
+        }
+
+        .ec-hero-image,
+        .ec-hero-inner,
+        .ec-hero-note {
+          animation: none;
+        }
+      }
+
+      /* Responsive */
+
+      @media (max-width: 1050px) {
+        .ec-navigation {
+          gap: 17px;
+        }
+
+        .ec-navigation > a {
+          font-size: 0.78rem;
+        }
+
+        .ec-hero-inner {
+          gap: 35px;
+        }
+
+        .ec-intro-grid,
+        .ec-values-grid,
+        .ec-faq-grid {
+          gap: 55px;
+        }
+
+        .ec-footer-main {
+          grid-template-columns: 1.2fr 0.8fr 0.8fr;
+        }
+
+        .ec-footer-about {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .ec-header {
+          backdrop-filter: none;
+        }
+
+        .ec-container {
+          width: min(100% - 36px, var(--ec-container));
+        }
+
+        .ec-header-main {
+          min-height: 78px;
+        }
+
+        .ec-brand img {
+          width: 51px;
+          height: 51px;
+        }
+
+        .ec-brand-copy strong {
+          font-size: 0.84rem;
+        }
+
+        .ec-brand-copy span {
+          font-size: 0.68rem;
+        }
+
+        .ec-menu-toggle {
+          display: flex;
+          flex: 0 0 auto;
+        }
+
+        .ec-header .ec-navigation {
+          position: fixed;
+          top: 78px;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: none;
+          overflow-y: auto;
+          align-items: stretch;
+          flex-direction: column;
+          gap: 0;
+          padding: 15px 24px 35px;
+          background: var(--ec-paper);
+        }
+
+        .ec-navigation.is-open {
+          display: flex;
+        }
+
+        .ec-navigation > a {
+          padding: 16px 0;
+          border-bottom: 1px solid var(--ec-line);
+          font-size: 0.94rem;
+        }
+
+        .ec-navigation > a::after {
+          display: none;
+        }
+
+        .ec-navigation .ec-nav-cta {
+          margin-top: 15px;
+          padding: 13px 16px;
+          border-bottom: 0;
+          text-align: center;
+        }
+
+        .ec-hero-inner {
+          min-height: auto;
+          grid-template-columns: 1fr;
+          gap: 34px;
+          padding-block: 55px 65px;
+        }
+
+        .ec-hero h1 {
+          font-size: clamp(2.7rem, 7vw, 4rem);
+        }
+
+        .ec-hero-description {
+          font-size: 0.92rem;
+        }
+
+        .ec-hero-visual {
+          width: 100%;
+          padding: 0 0 48px;
+        }
+
+        .ec-hero-image {
+          aspect-ratio: 1.4;
+        }
+
+        .ec-hero-note {
+          right: 0;
+          width: min(300px, 68%);
+        }
+
+        .ec-quick-inner {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .ec-quick-link {
+          min-height: 70px;
+          border-bottom: 1px solid #dedfd7;
+        }
+
+        .ec-quick-link:nth-child(odd) {
+          border-left: 1px solid #dedfd7;
+        }
+
+        .ec-intro,
+        .ec-mandate,
+        .ec-independence,
+        .ec-process,
+        .ec-values,
+        .ec-citizen {
+          padding-block: 75px;
+        }
+
+        .ec-intro-grid {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .ec-intro-aside p {
+          max-width: 540px;
+        }
+
+        .ec-mandate-heading,
+        .ec-process-header,
+        .ec-citizen-heading {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .ec-mandate-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .ec-mandate-statement {
+          min-height: 300px;
+        }
+
+        .ec-independence-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .ec-independence-image img {
+          aspect-ratio: 1.45;
+        }
+
+        .ec-process-list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .ec-process-item {
+          min-height: 190px;
+          padding: 24px 18px 25px 0;
+        }
+
+        .ec-process-item:not(:nth-child(4n + 1)) {
+          padding-left: 0;
+          border-left: 0;
+        }
+
+        .ec-process-item:nth-child(even) {
+          padding-left: 20px;
+          border-left: 1px solid var(--ec-line);
+        }
+
+        .ec-process-item:nth-child(n + 3) {
+          border-top: 1px solid var(--ec-line);
+        }
+
+        .ec-values-grid,
+        .ec-faq-grid {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+
+        .ec-cta-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .ec-cta-actions {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .ec-footer-main {
+          grid-template-columns: 1fr 1fr;
+          gap: 38px 28px;
+        }
+
+        .ec-footer-about {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .ec-container {
+          width: calc(100% - 32px);
+        }
+
+        .ec-concept-notice {
+          font-size: 0.68rem;
+        }
+
+        .ec-brand {
+          gap: 9px;
+        }
+
+        .ec-brand img {
+          width: 43px;
+          height: 43px;
+        }
+
+        .ec-brand-copy strong {
+          max-width: 205px;
+          font-size: 0.76rem;
+        }
+
+        .ec-brand-copy span {
+          font-size: 0.63rem;
+        }
+
+        .ec-hero-inner {
+          grid-template-columns: 1fr;
+          gap: 36px;
+          padding-block: 55px 60px;
+        }
+
+        .ec-hero h1 {
+          max-width: 420px;
+          font-size: clamp(3rem, 12vw, 4.1rem);
+        }
+
+        .ec-hero-description {
+          margin-block: 20px 24px;
+        }
+
+        .ec-hero-actions {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .ec-hero-actions .ec-button {
+          width: 100%;
+        }
+
+        .ec-hero-visual {
+          width: 100%;
+          margin-left: 0;
+          padding-bottom: 46px;
+        }
+
+        .ec-hero-image {
+          aspect-ratio: 1.2;
+        }
+
+        .ec-hero-note {
+          right: 0;
+          width: min(265px, 82%);
+          padding: 16px;
+        }
+
+        .ec-quick-link {
+          padding: 15px 11px;
+          font-size: 0.77rem;
+        }
+
+        .ec-section-title {
+          font-size: 2.3rem;
+        }
+
+        .ec-intro-bottom {
+          grid-template-columns: 1fr;
+          gap: 17px;
+        }
+
+        .ec-mandate-heading {
+          gap: 15px;
+        }
+
+        .ec-mandate-statement {
+          min-height: 285px;
+          padding: 27px;
+        }
+
+        .ec-mandate-statement .ec-number {
+          font-size: 3.6rem;
+        }
+
+        .ec-mandate-statement h3 {
+          font-size: 1.75rem;
+        }
+
+        .ec-mandate-list {
+          padding: 12px 20px;
+        }
+
+        .ec-mandate-list li {
+          grid-template-columns: 28px 1fr;
+          gap: 10px;
+        }
+
+        .ec-process-item {
+          min-height: 215px;
+          padding-right: 10px;
+        }
+
+        .ec-process-item:nth-child(even) {
+          padding-left: 13px;
+        }
+
+        .ec-process-item .ec-process-number {
+          margin-bottom: 23px;
+        }
+
+        .ec-process-item h3 {
+          font-size: 0.9rem;
+        }
+
+        .ec-process-item p {
+          font-size: 0.79rem;
+        }
+
+        .ec-value-row {
+          grid-template-columns: 36px 1fr;
+          gap: 12px;
+        }
+
+        .ec-resource {
+          grid-template-columns: 48px 1fr 20px;
+          gap: 12px;
+          padding-inline: 0;
+        }
+
+        .ec-resource:hover {
+          padding-inline: 8px;
+        }
+
+        .ec-resource-icon {
+          width: 44px;
+          height: 44px;
+        }
+
+        .ec-resource p {
+          font-size: 0.8rem;
+        }
+
+        .ec-faq-question {
+          font-size: 0.88rem;
+        }
+
+        .ec-faq-answer {
+          padding-right: 12px;
+        }
+
+        .ec-cta-actions {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        .ec-cta-actions .ec-button {
+          width: 100%;
+        }
+
+        .ec-footer-main {
+          grid-template-columns: 1fr;
+          gap: 32px;
+          padding-block: 45px;
+        }
+
+        .ec-footer-about {
+          grid-column: auto;
+        }
+
+        .ec-footer-bottom {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- This is a student/developer design concept, not an official government website. -->
+    <div class="topbar">
+      <div class="container">
+        <span>Official website design concept • Republic of Uganda</span
+        ><span>Integrity · Transparency · Democracy</span>
+      </div>
+    </div>
+
+    <header class="ec-header">
+      <div class="ec-container ec-header-main">
+        <a
+          class="ec-brand"
+          href="index.html"
+          aria-label="Electoral Commission concept homepage"
+        >
+          <img
+            src="assets/logo.png"
+            alt="Electoral Commission concept logo"
+            onerror="this.style.display = 'none'"
+          />
+          <span class="ec-brand-copy">
+            <strong>ELECTORAL COMMISSION</strong>
+            <span>Republic of Uganda · Website Concept</span>
+          </span>
+        </a>
+
+        <button
+          class="ec-menu-toggle"
+          id="ec-menu-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <nav
+          class="ec-navigation"
+          id="ec-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html">Home</a>
+          <a href="about.html" aria-current="page">About Us</a>
+          <a href="categories.html">Elections</a>
+          <a href="news.html">News & Updates</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="faq.html">FAQs</a>
+          <a href="contact.html" class="ec-nav-cta">Contact Us ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="ec-hero">
+        <div class="ec-container ec-hero-inner">
+          <div class="ec-hero-copy">
+            <p class="ec-eyebrow">About the Commission</p>
+
+            <h1>
+              The institution behind
+              <span>the vote.</span>
+            </h1>
+
+            <p class="ec-hero-description">
+              Elections are more than a day at the polling station. They involve
+              the institutions, procedures and public responsibilities that
+              enable citizens to participate in choosing their leaders.
+            </p>
+
+            <div class="ec-hero-actions">
+              <a class="ec-button ec-button--gold" href="#mandate">
+                Explore our mandate <span aria-hidden="true">↘</span>
+              </a>
+
+              <a class="ec-button ec-button--light" href="#electoral-process">
+                Understand the electoral process
+              </a>
+            </div>
+          </div>
+
+          <div class="ec-hero-visual">
+            <figure class="ec-hero-image">
+              <img
+                src="assets/pp.png"
+                alt="Government and civic institutions in a public setting"
+                fetchpriority="high"
+              />
+            </figure>
+
+            <div class="ec-hero-note">
+              <span>Our constitutional foundation</span>
+              <strong>Articles 60–67</strong>
+              <small>Constitution of the Republic of Uganda, 1995</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shortcuts -->
+      <section class="ec-quick-strip" aria-label="Explore this page">
+        <div class="ec-container ec-quick-inner">
+          <a class="ec-quick-link" href="#overview">
+            <span>Who we are</span><span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="ec-quick-link" href="#mandate">
+            <span>Our mandate</span><span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="ec-quick-link" href="#electoral-process">
+            <span>Electoral process</span><span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="ec-quick-link" href="#citizen-information">
+            <span>Citizen information</span><span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="ec-intro" id="overview">
+        <div class="ec-container ec-intro-grid">
+          <aside class="ec-intro-aside ec-reveal">
+            <p class="ec-eyebrow">01 / The institution</p>
+            <p>
+              Understanding the Commission begins with its place in Uganda's
+              constitutional and electoral framework.
+            </p>
+          </aside>
+
+          <div class="ec-intro-main ec-reveal">
+            <h2 class="ec-section-title">
+              An electoral institution with a public responsibility.
+            </h2>
+
+            <p class="ec-lead">
+              The Electoral Commission of Uganda is established under Article 60
+              of the Constitution of the Republic of Uganda, 1995. Its
+              constitutional role centres on organising, conducting and
+              supervising regular, free and fair elections and referenda.
+            </p>
+
+            <div class="ec-intro-bottom">
+              <p>
+                Its work extends beyond polling day. It includes voter
+                registration, electoral boundary demarcation, voter education
+                and the handling of election complaints within its legal
+                mandate.
+              </p>
+
+              <p>
+                These responsibilities connect election administration with
+                citizens' ability to participate in the electoral process and
+                understand how it works.
+              </p>
+            </div>
+
+            <p style="margin-top: 30px">
+              <a
+                class="ec-text-link"
+                href="https://www.ec.or.ug/about-electoral-commission"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read the Commission's official overview
+                <span aria-hidden="true">↗</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mandate -->
+      <section class="ec-mandate" id="mandate">
+        <div class="ec-container">
+          <div class="ec-mandate-heading ec-reveal">
+            <div>
+              <p class="ec-eyebrow">02 / Constitutional mandate</p>
+              <h2 class="ec-section-title">
+                What the Commission is mandated to do.
+              </h2>
+            </div>
+
+            <p>
+              Article 61 sets out the Commission's core constitutional
+              functions. Together, these responsibilities cover the electoral
+              process from voter registration to results.
+            </p>
+          </div>
+
+          <div class="ec-mandate-layout ec-reveal">
+            <div class="ec-mandate-statement">
+              <div>
+                <span class="ec-number">61</span>
+                <h3>
+                  Organising elections and referenda under the Constitution.
+                </h3>
+              </div>
+
+              <p>
+                Constitutional reference: Article 61 of the Constitution of the
+                Republic of Uganda, 1995.
+              </p>
+            </div>
+
+            <ol class="ec-mandate-list">
+              <li>
+                <span class="ec-list-number">01</span>
+                <p>
+                  Ensure that regular, free and fair elections and referenda are
+                  held.
+                </p>
+              </li>
+
+              <li>
+                <span class="ec-list-number">02</span>
+                <p>
+                  Organise, conduct and supervise elections and referenda in
+                  accordance with the Constitution.
+                </p>
+              </li>
+
+              <li>
+                <span class="ec-list-number">03</span>
+                <p>
+                  Demarcate constituencies in accordance with constitutional
+                  provisions.
+                </p>
+              </li>
+
+              <li>
+                <span class="ec-list-number">04</span>
+                <p>
+                  Compile, maintain, revise and update the voters' register.
+                </p>
+              </li>
+
+              <li>
+                <span class="ec-list-number">05</span>
+                <p>
+                  Formulate and implement voter education programmes relating to
+                  elections.
+                </p>
+              </li>
+
+              <li>
+                <span class="ec-list-number">06</span>
+                <p>
+                  Hear and determine election complaints arising before and
+                  during polling.
+                </p>
+              </li>
+
+              <li>
+                <span class="ec-list-number">07</span>
+                <p>
+                  Ascertain, publish and declare election and referendum results
+                  in accordance with the law.
+                </p>
+              </li>
+            </ol>
+          </div>
+
+          <p class="ec-mandate-footnote">
+            This is a summary for the design concept, not a substitute for the
+            complete constitutional text or applicable electoral laws.
+          </p>
+
+          <p style="margin-top: 23px">
+            <a
+              class="ec-text-link"
+              href="https://www.ec.or.ug/functions-electoral-commission"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View the official functions
+              <span aria-hidden="true">↗</span>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Independence -->
+      <section class="ec-independence" id="independence">
+        <div class="ec-container ec-independence-grid">
+          <div class="ec-independence-image ec-reveal">
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=85"
+              alt="Professional institutional workspace"
+              loading="lazy"
+            />
+
+            <div class="ec-image-caption">
+              <span>Institutional responsibility</span>
+              <span>Uganda</span>
+            </div>
+          </div>
+
+          <div class="ec-independence-copy ec-reveal">
+            <p class="ec-eyebrow">03 / Independence & accountability</p>
+
+            <h2 class="ec-section-title">
+              Independence is part of the constitutional design.
+            </h2>
+
+            <p>
+              The Constitution addresses not only the Commission's
+              responsibilities but also its independence. Article 62 provides
+              that, in performing its constitutional functions, the Commission
+              shall be free from the direction or control of any person or
+              authority.
+            </p>
+
+            <p>
+              This constitutional provision forms part of the framework
+              governing how the Commission carries out its electoral
+              responsibilities.
+            </p>
+
+            <div class="ec-constitutional-reference">
+              <strong>Constitutional reference · Article 62</strong>
+              <p>
+                Independence in the performance of the Commission's functions is
+                expressly addressed by the Constitution. This summary should be
+                read alongside the full legal text.
+              </p>
+            </div>
+
+            <p style="margin-top: 27px">
+              <a
+                class="ec-text-link"
+                href="https://ulii.org/sw/akn/ug/act/statute/1995/constitution/eng%402023-12-31"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Consult the Constitution
+                <span aria-hidden="true">↗</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Electoral process -->
+      <section class="ec-process" id="electoral-process">
+        <div class="ec-container">
+          <div class="ec-process-header ec-reveal">
+            <div>
+              <p class="ec-eyebrow">04 / How the process works</p>
+              <h2 class="ec-section-title">
+                An election is a process, not just a day.
+              </h2>
+            </div>
+
+            <p class="ec-lead">
+              Electoral activities take place in stages. The exact schedule
+              depends on the type of election and the applicable official
+              programme.
+            </p>
+          </div>
+
+          <div class="ec-process-list ec-reveal">
+            <article class="ec-process-item">
+              <span class="ec-process-number">01</span>
+              <h3>Voter registration</h3>
+              <p>
+                The voters' register is compiled and maintained in accordance
+                with the applicable electoral framework.
+              </p>
+            </article>
+
+            <article class="ec-process-item">
+              <span class="ec-process-number">02</span>
+              <h3>Register updates</h3>
+              <p>
+                Voter register updates and display activities take place
+                according to official arrangements and deadlines.
+              </p>
+            </article>
+
+            <article class="ec-process-item">
+              <span class="ec-process-number">03</span>
+              <h3>Voter education</h3>
+              <p>
+                Citizens receive information intended to help them understand
+                electoral procedures and participation.
+              </p>
+            </article>
+
+            <article class="ec-process-item">
+              <span class="ec-process-number">04</span>
+              <h3>Candidate nominations</h3>
+              <p>
+                Candidates participate in nomination procedures governed by
+                applicable laws and official schedules.
+              </p>
+            </article>
+
+            <article class="ec-process-item">
+              <span class="ec-process-number">05</span>
+              <h3>Campaign period</h3>
+              <p>
+                Campaign activities take place within the applicable legal
+                framework and announced timetable.
+              </p>
+            </article>
+
+            <article class="ec-process-item">
+              <span class="ec-process-number">06</span>
+              <h3>Polling day</h3>
+              <p>
+                Eligible voters cast their ballots according to the procedures
+                established for the election.
+              </p>
+            </article>
+
+            <article class="ec-process-item">
+              <span class="ec-process-number">07</span>
+              <h3>Results declaration</h3>
+              <p>
+                Results are ascertained, published and declared in accordance
+                with applicable law.
+              </p>
+            </article>
+
+            <article class="ec-process-item">
+              <span class="ec-process-number">08</span>
+              <h3>Electoral complaints</h3>
+              <p>
+                Election complaints are handled through the relevant procedures
+                and within the Commission's legal mandate.
+              </p>
+            </article>
+          </div>
+
+          <p class="ec-process-note">
+            This is an explanatory overview, not a live election calendar.
+            Always consult official notices for dates, eligibility rules and
+            procedural requirements.
+          </p>
+
+          <p style="margin-top: 23px">
+            <a
+              class="ec-text-link"
+              href="https://www.ec.or.ug/elections"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explore official election information
+              <span aria-hidden="true">↗</span>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Values -->
+      <section class="ec-values" id="principles">
+        <div class="ec-container ec-values-grid">
+          <div class="ec-values-intro ec-reveal">
+            <p class="ec-eyebrow">05 / Guiding principles</p>
+
+            <h2 class="ec-section-title">
+              The principles that give the process its meaning.
+            </h2>
+
+            <p>
+              Electoral administration depends on a clear legal framework,
+              professional practice and information that people can access and
+              understand.
+            </p>
+          </div>
+
+          <div class="ec-values-list ec-reveal">
+            <article class="ec-value-row">
+              <span>01</span>
+              <div>
+                <h3>Impartiality</h3>
+                <p>
+                  Electoral responsibilities must be carried out within the
+                  applicable legal framework and without improper direction or
+                  control.
+                </p>
+              </div>
+            </article>
+
+            <article class="ec-value-row">
+              <span>02</span>
+              <div>
+                <h3>Professionalism</h3>
+                <p>
+                  Election administration requires organised procedures, trained
+                  personnel and careful management of electoral work.
+                </p>
+              </div>
+            </article>
+
+            <article class="ec-value-row">
+              <span>03</span>
+              <div>
+                <h3>Public information</h3>
+                <p>
+                  Accessible voter education and clear official notices help
+                  citizens understand procedures and deadlines.
+                </p>
+              </div>
+            </article>
+
+            <article class="ec-value-row">
+              <span>04</span>
+              <div>
+                <h3>Accountability</h3>
+                <p>
+                  Legal responsibilities, established procedures and official
+                  records provide a framework for public scrutiny.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Citizen resources -->
+      <section class="ec-citizen" id="citizen-information">
+        <div class="ec-container">
+          <div class="ec-citizen-heading ec-reveal">
+            <div>
+              <p class="ec-eyebrow">06 / For citizens</p>
+              <h2 class="ec-section-title">Information worth keeping close.</h2>
+            </div>
+
+            <p class="ec-lead">
+              The most useful electoral information is information citizens can
+              find, understand and verify.
+            </p>
+          </div>
+
+          <div class="ec-resource-list ec-reveal">
+            <a
+              class="ec-resource"
+              href="https://www.ec.or.ug/elections"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="ec-resource-icon" aria-hidden="true">◎</span>
+              <span>
+                <h3>Election information</h3>
+                <p>
+                  Find general information about electoral activities and the
+                  stages of the election process.
+                </p>
+              </span>
+              <span class="ec-resource-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="ec-resource"
+              href="https://www.ec.or.ug/functions-electoral-commission"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="ec-resource-icon" aria-hidden="true">§</span>
+              <span>
+                <h3>Mandate and legal responsibilities</h3>
+                <p>
+                  Read the Commission's published explanation of its
+                  constitutional functions.
+                </p>
+              </span>
+              <span class="ec-resource-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="ec-resource"
+              href="https://www.ec.or.ug/info/history-elctions-uganda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="ec-resource-icon" aria-hidden="true">⌁</span>
+              <span>
+                <h3>History of elections in Uganda</h3>
+                <p>
+                  Explore the historical development of elections and electoral
+                  administration in Uganda.
+                </p>
+              </span>
+              <span class="ec-resource-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="ec-resource"
+              href="https://www.ec.or.ug/establishment-and-mandate-electoral-commission"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="ec-resource-icon" aria-hidden="true">▤</span>
+              <span>
+                <h3>Establishment and mandate</h3>
+                <p>
+                  Read the official overview of the Commission's establishment,
+                  mission and vision.
+                </p>
+              </span>
+              <span class="ec-resource-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Frequently asked questions -->
+      <section class="ec-faq" id="about-faq">
+        <div class="ec-container ec-faq-grid">
+          <div class="ec-faq-intro ec-reveal">
+            <p class="ec-eyebrow">07 / Frequently asked questions</p>
+
+            <h2 class="ec-section-title">A few things worth understanding.</h2>
+
+            <p>
+              Short explanations of the Commission's constitutional role and the
+              electoral process.
+            </p>
+
+            <a class="ec-text-link" href="faq.html" style="margin-top: 15px">
+              Visit the FAQ page <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="ec-faq-list ec-reveal">
+            <div class="ec-faq-item">
+              <button
+                class="ec-faq-question"
+                type="button"
+                aria-expanded="true"
+                aria-controls="ec-answer-1"
+              >
+                <span>What establishes the Electoral Commission?</span>
+                <span aria-hidden="true">+</span>
+              </button>
+
+              <div class="ec-faq-answer" id="ec-answer-1">
+                <p>
+                  Article 60 of the Constitution of the Republic of Uganda,
+                  1995, provides for the establishment of the Electoral
+                  Commission.
+                </p>
+              </div>
+            </div>
+
+            <div class="ec-faq-item">
+              <button
+                class="ec-faq-question"
+                type="button"
+                aria-expanded="false"
+                aria-controls="ec-answer-2"
+              >
+                <span>What is the Commission's main responsibility?</span>
+                <span aria-hidden="true">+</span>
+              </button>
+
+              <div class="ec-faq-answer" id="ec-answer-2" hidden>
+                <p>
+                  Its core mandate includes ensuring regular, free and fair
+                  elections and referenda, and organising, conducting and
+                  supervising them in accordance with the Constitution.
+                </p>
+              </div>
+            </div>
+
+            <div class="ec-faq-item">
+              <button
+                class="ec-faq-question"
+                type="button"
+                aria-expanded="false"
+                aria-controls="ec-answer-3"
+              >
+                <span>Does the Commission's work end on polling day?</span>
+                <span aria-hidden="true">+</span>
+              </button>
+
+              <div class="ec-faq-answer" id="ec-answer-3" hidden>
+                <p>
+                  No. Its responsibilities include voter registration, voter
+                  education, constituency demarcation, electoral administration,
+                  results declaration and handling certain election complaints.
+                </p>
+              </div>
+            </div>
+
+            <div class="ec-faq-item">
+              <button
+                class="ec-faq-question"
+                type="button"
+                aria-expanded="false"
+                aria-controls="ec-answer-4"
+              >
+                <span>Where can I confirm election dates and deadlines?</span>
+                <span aria-hidden="true">+</span>
+              </button>
+
+              <div class="ec-faq-answer" id="ec-answer-4" hidden>
+                <p>
+                  Check official Commission notices and announcements. Do not
+                  rely on an old calendar, social media post or this design
+                  concept for current election dates.
+                </p>
+              </div>
+            </div>
+
+            <div class="ec-faq-item">
+              <button
+                class="ec-faq-question"
+                type="button"
+                aria-expanded="false"
+                aria-controls="ec-answer-5"
+              >
+                <span
+                  >Where can I read the full constitutional provisions?</span
+                >
+                <span aria-hidden="true">+</span>
+              </button>
+
+              <div class="ec-faq-answer" id="ec-answer-5" hidden>
+                <p>
+                  Consult the Constitution of the Republic of Uganda and the
+                  applicable electoral laws. The official Commission website
+                  also publishes information about its mandate and functions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="ec-cta">
+        <div class="ec-container ec-cta-inner">
+          <div>
+            <p class="ec-eyebrow">Stay informed</p>
+
+            <h2>Know the process. Find the information. Verify the facts.</h2>
+
+            <p>
+              Use official sources for election announcements, voter
+              information, legal requirements and important deadlines.
+            </p>
+          </div>
+
+          <div class="ec-cta-actions">
+            <a
+              class="ec-button ec-button--gold"
+              href="https://www.ec.or.ug/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit official website ↗
+            </a>
+
+            <a class="ec-button ec-button--light" href="contact.html">
+              Explore contact page
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html"
+              ><img
+                class="brand-logo"
+                src="assets/logo.png"
+                alt="Electoral Commission Uganda logo"
+              /><span
+                ><strong style="color: white">THE ELECTORAL COMMISSION</strong
+                ><small style="color: #b9c7d7"
+                  >UGANDA · WEBSITE CONCEPT</small
+                ></span
+              ></a
+            >
+            <p>
+              Supporting informed participation and credible electoral processes
+              through accessible public information.
+            </p>
+          </div>
+          <div>
+            <div class="footer-title">Quick Links</div>
+            <a href="about.html">About the Commission</a
+            ><a href="categories.html">Services & Categories</a
+            ><a href="news.html">News & Updates</a
+            ><a href="gallery.html">Gallery</a>
+          </div>
+          <div>
+            <div class="footer-title">Help & Support</div>
+            <a href="faq.html">Frequently Asked Questions</a
+            ><a href="contact.html">Contact Us</a
+            ><a href="categories.html#registration">Voter Registration</a
+            ><a href="categories.html#results">Election Results</a>
+          </div>
+          <div class="footer-contact-column">
+            <div class="footer-contact-copy">
+              <div class="footer-title">Contact Information</div>
+              <p class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24">
+                    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+                    <circle cx="12" cy="10" r="2.5" /></svg></span
+                ><span>Kampala, Uganda</span>
+              </p>
+              <p class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24">
+                    <path
+                      d="M7 3h3l2 5-2 1.5a14 14 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10.7 19 5 13.3 5 6c0-1.7.6-3 2-3Z"
+                    /></svg></span
+                ><span
+                  >Use verified official contact details before launch</span
+                >
+              </p>
+              <p class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m4 7 8 6 8-6" /></svg></span
+                ><span>Add official email address here</span>
+              </p>
+            </div>
+            <div class="footer-side-cta">
+              <img
+                class="footer-flag"
+                src="assets/flag.png"
+                alt="Uganda national flag"
+              />
+              <div class="footer-strap">Your Vote<br />Your Future</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© 2026 Website design concept. Not an official government
+            website.</span
+          ><span class="footer-legal-links">
+            <a href="policies.html#accessibility">Accessibility</a>
+            <a href="policies.html#privacy">Privacy</a>
+            <a href="policies.html#terms">Terms</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile navigation
+      const menuToggle = document.getElementById("ec-menu-toggle");
+      const navigation = document.getElementById("ec-navigation");
+      const header = document.querySelector(".ec-header");
+
+      function positionNavigation() {
+        navigation.style.top = `${header.getBoundingClientRect().bottom}px`;
+      }
+
+      function closeNavigation() {
+        navigation.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        document.body.classList.remove("menu-open");
+      }
+
+      menuToggle.addEventListener("click", () => {
+        positionNavigation();
+        const isOpen = navigation.classList.toggle("is-open");
+
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation menu" : "Open navigation menu",
+        );
+
+        document.body.classList.toggle("menu-open", isOpen);
+      });
+
+      navigation.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeNavigation);
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 800) {
+          closeNavigation();
+        } else if (navigation.classList.contains("is-open")) {
+          positionNavigation();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          closeNavigation();
+        }
+      });
+
+      // Accessible FAQ accordion
+      const faqQuestions = document.querySelectorAll(".ec-faq-question");
+
+      faqQuestions.forEach((question) => {
+        question.addEventListener("click", () => {
+          const isExpanded = question.getAttribute("aria-expanded") === "true";
+
+          const answerId = question.getAttribute("aria-controls");
+          const answer = document.getElementById(answerId);
+
+          question.setAttribute("aria-expanded", String(!isExpanded));
+          answer.hidden = isExpanded;
+        });
+      });
+
+      // Subtle entrance animations, with a fallback for older browsers
+      const revealElements = document.querySelectorAll(".ec-reveal");
+
+      if ("IntersectionObserver" in window) {
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12 },
+        );
+
+        revealElements.forEach((element) => revealObserver.observe(element));
+      } else {
+        revealElements.forEach((element) => {
+          element.classList.add("is-visible");
+        });
+      }
+
+      // Automatically update the footer year
+      document.getElementById("ec-current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
